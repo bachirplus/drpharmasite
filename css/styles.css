@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+
+
+header 
+    h1,h2 {
+        font-family:'Times New Roman', Times, serif;
+    
+    background-color: linear-gradient(to right, rgb(129, 228, 72),#96df66, #5ddb1488, #2bf508);
+    
+}
+
+
+
+footer {
+    background-image: linear-gradient(#e3ffc8, rgba(255, 255, 255, 0.561));
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(255, 255, 255),#fdfdfd, #5ddb1488, #29c70e);
+    padding: 20px;
+    color: black;
+    
+
+    
+}
+
+.row-content {
+    background-color: rgb(78, 235, 78);
+    margin:4rem;
+    padding:30 0;
+    border-bottom: 1px ridge;
+    min-height: 100px;
+}
+.navbar{
+    background-color: rgb(224, 61, 189);
+}

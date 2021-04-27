@@ -4,57 +4,133 @@
 <head>
     <meta charset="utf-8" />
     <meta name="vieport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/dist/css/bootstrap.social.css">
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+   <Link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Lobster|Opens+Sans">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="css/styles.css"/>
+
+   
     <title>Dr&Pharmacy Cilrcles: The Best Choice for Your HealthCare </title>
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1>Dr&Pharmacy Cilrcles</h1>
-            <h2>The Best Choice for Your HealthCare</h2>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <Div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid" alt="logo image"/>
+                </div>
+                <div class="col">
+                    <h1>Dr&Pharmacy Cilrcles</h1>
+                    <h2>The Best Choice for Your HealthCare</h2>
+
+                </div>
+            </Div>
+            
         </div>
     </header>
+    <!-- My Personnal Comment: Adding the navbar inside the body element, just below the existing </header> closing tag -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+           <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+           <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#drpharmaNavbar">
+               <span class="navbar-toggler-icon"> </span>
+           </button>
 
-    <div>
-        <h2>Find a Doctor</h2>
-        <h3>Our Providers</h3>
-        <p>Explore our list of best dotors </p>
-    </div>
+           <div class="collapse navbar-collapse" id="drpharmaNavbar">
+               <ul class="navbar-nav">
+                   <!--  My Personal Comments:  NOTE: You can use either the <i> or <span> element to place Font-Awesome icons within your webpage.-->
+                   <!-- My Personal Comments: The creators of Font-Awesome prefer to use <i> for brevity, but <span> is more semantically correct.-->
+                   <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                   <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                   <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Support</a></li>
+                   <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                   <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-search-card fa-lg"></i> Search</a></li>
+                   
+               </ul>
+               <span class="navbar-text ml-auto">
+                   <a role="button" data-toggle="modal" data-target="#loginModal">
+                       <i class="fa fa-sign-in"></i> Login
+                   </a>
 
-    <div>
-        <h2>Find a Pharmacy</h2>
-        <h3>Our Pharmacies</h3>
-        <p>Available 24/7 with on duty backup</p>
-    </div>
+               </span>
+           </div>
+       </div>
+   </nav>
+    <div class="container">
+        <Div class="row-content bg-white">
+            <div class="col-sm-2 col-md-2 ">
+                <img class="rounded-circle img-fluid float-left" src="img/doctor.png"  alt="logo image"/>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <h2>Find a Doctor</h2>
+                <h3>Our Providers</h3>
+                <p>Explore our list of best dotors </p>
+            </div>
+           
+        </Div>
+        
+        <Div class="row-content bg-white">
+            <div class="col-sm-2">
+                <img class="rounded-circle img-fluid float-left" src="img/pharmacy.png"  alt="logo image"/>
+            </div>
+            <div class="col">
+                <h2>Find a Pharmacy</h2>
+                <h3>Hundreds of Pharmacies</h3>
+                <p class="d-none d-sm-block">Available 24/7 with on duty backup</p>
 
-    <div>
-        <h2>Ride and Delivery</h2>
-        <h3>A transportation system that suites your health needs.</h3>
-        <p>When a ride or prescription-delivery are needed, we are here to help you get what you need.</p>
+            </div>
+            
+        </Div>
+        
+        <Div class="row-content bg-white">
+            <div class="col-sm-2 ">
+                <img class="img-fluid float-left" src="img/embulance.png" alt="logo image"/>
+            </div>
+            <div class="col">
+                <h2>Rides and Prescription Delivery</h2>
+                <h3>A transportation system that suites your health needs.</h3>
+                <p>When a ride or prescription-delivery is needed, we are here to help you get what you need.</p>
+            </div>
+            
+        </Div>
+        
     </div>
+    
 
     <footer>
-        <div>
-            <h5></h5>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Social</h5>
-            <a href="http://instagram.com/">Instagram</a>
-            <a href="http://facebook.com/">Facebook</a>
-            <a href="http://twitter.com/">Twitter</a>
-            <a href="http://youtube.com/">YouTube</a>
-        </div>
-        <div>
-            Tel: 1-000-000-0000<br />
-            Email: mail@email.com
-        </div>
+        <div class="container">
+            <Div class="row">
+                <div class="col">
+                    <h5></h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 align-self-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" style="background-color: #ac2bac;" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" style="background-color: #3b5998;" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" style="background-color: #55acee;" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" style="background-color: #dd4b39;" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+
+                </div>
+                
+                </div class="col">
+
+                    Tel: 1-000-000-0000<br />
+                    Email: mail@email.com
+                </div>
+            </Div>
+            
+                
     </footer>
     <!--Here goes the scripts, jQuery must be firts, then popper.js, then the Bootstrap JavaScript plugins-->
     <Script src="node_modules/jquery/dist/jquery.slim.min.js"></Script>
